@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>NETFLIX 회원가입</title>
+<link rel="icon" href="images/favicon.png">
+</head>
+<body>
+	<form>
+		<img src="images/netflix.png"><br> 
+		
+		<strong>아이디입력</strong>
+			<input type="text" name="user-id" placeholder="아이디입력" required>
+			
+			<button>중복검사</button><br>
+			
+		<strong>비밀번호 입력</strong> 
+			<input type="password"name="user-password" placeholder="비밀번호입력"><br> 
+			
+		<strong>이름</strong> 
+			<input type="text"name="user-name" placeholder="이름입력"><br> 
+			
+		<div>
+         	<strong>생년월일</strong><input type="date">
+      	</div>
+      	
+		<strong>이메일</strong> 
+			<input type="text"name="user-email" placeholder="이메일입력"><br> 
+			<strong>이메일 수신동의 여부</strong>
+			<input type="radio" name="agree" value="동의">동의
+			<input type="radio" name="agree" value="동의안함">동의안함<br>
+				
+		<strong>휴대폰번호</strong>
+			<input type="text" name="user-phone" placeholder="(-제외하고) 입력" required><br>
+			<strong>통신사 선택</strong>
+			
+         		<select name="news agency">
+            		<option value="" selected>통신사</option>
+            		<option value="computer">SKT</option>
+            		<option value="model">KT</option>
+            		<option value="nurse">LGU</option>
+         		</select>
+         		
+ 				<button>인증하기</button><br>
+ 				
+ 				<strong>내/외국인</strong>
+ 					<label> <input type="radio" name="from" value="내국인">내국인</label> 
+					<label> <input type="radio" name="from" value="외국인">외국인</label><br>
+					
+		<fieldset style="width:150px">
+			<legend><strong>성별 선택</strong></legend>
+			<label><input type="radio" name="gender" value="남자">남자</label> 
+			<label><input type="radio" name="gender" value="여자">여자</label><br>
+		</fieldset>
+		
+		<fieldset style="width:400px">
+				<legend><strong>관심비디오 선택(중복가능)</strong></legend>
+			<label> <input type="checkbox" name="vidio" value="남자">액션</label>
+			<label> <input type="checkbox" name="vidio" value="남자">코미디</label>
+			<label> <input type="checkbox" name="vidio" value="남자">로맨스</label>
+			<label> <input type="checkbox" name="vidio" value="남자">아동</label>
+			<label> <input type="checkbox" name="vidio" value="남자">애니</label>
+			<label> <input type="checkbox" name="vidio" value="남자">느와르</label>
+		</fieldset><br>
+		
+		<div>
+        	<button type="submit" style="width:430px; height:60px; background-color:red; color:white; border:none" >
+        	회원가입완료
+        	</button>
+      	</div>
+			
+	</form>
+</body>
+</html>
